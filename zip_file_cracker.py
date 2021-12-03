@@ -1,8 +1,9 @@
 import zipfile
 import tqdm
 from time import sleep
-passwd = []
+
 def zip_cracker(word_file, zip_file):
+    passwd = []
     length_list = len(list(open(word_file, 'rb')))
     with open(word_file, 'rb') as file:
         for i in file:
